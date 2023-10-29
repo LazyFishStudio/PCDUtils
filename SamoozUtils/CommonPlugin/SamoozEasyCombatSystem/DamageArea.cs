@@ -7,6 +7,7 @@ using UnityEngine;
 public class DamageArea : MonoBehaviour {
     public string damageTag;
     public bool activeOnStart;
+    public Transform attacker;
     private Rigidbody rb;
     private BoxCollider coll;
     private bool isDamageDetectActive;
