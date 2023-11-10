@@ -59,7 +59,11 @@
 			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{853e6f51-9ffc-40da-9759-a31b5a688e2a}" />
+	<object class="EventAutomatableProperties" id="{853e6f51-9ffc-40da-9759-a31b5a688e2a}">
+		<property name="maximumDistance">
+			<value>55</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{b344d541-6531-4807-bf24-59f31f0b9658}" />
 	<object class="Timeline" id="{2d6d2bab-157c-4927-974a-9b266bd8724a}">
 		<property name="isProxyEnabled">
@@ -72,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{afb2ea84-9fc3-4797-82ab-b094d51cefc6}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{cbcec2c6-f5ed-4f1d-a20b-440e334558c6}</destination>
 		</relationship>
@@ -101,9 +108,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{d188df72-76e9-4300-b701-38619ce5b26f}" />
 	<object class="MultiSound" id="{dc488598-ae06-4c9d-a5fc-f6b84fe4ed5a}">
-		<property name="volume">
-			<value>-18</value>
-		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>

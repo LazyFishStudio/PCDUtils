@@ -21,7 +21,7 @@ public class Line3D : MonoBehaviour {
         }
     }
 
-    void Update() {
+    void LateUpdate() {
         
         if (startPointTarget)
             startPoint.position = startPointTarget.position;

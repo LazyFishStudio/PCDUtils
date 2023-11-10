@@ -59,7 +59,11 @@
 			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{46c0e2bd-640f-4c5d-8404-22c583e33b0e}" />
+	<object class="EventAutomatableProperties" id="{46c0e2bd-640f-4c5d-8404-22c583e33b0e}">
+		<property name="maximumDistance">
+			<value>55</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{48c34e74-e09d-459c-834e-48be4de68245}" />
 	<object class="Timeline" id="{c6cd26e5-6f7a-431e-9a12-3002b4307fe4}">
 		<property name="isProxyEnabled">
@@ -72,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{722deeb6-42a8-4ac7-8d09-5a68eda1fa10}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{120e05ff-70f9-40f1-8f24-02e2e7e4f553}</destination>
 		</relationship>
@@ -101,9 +108,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{443e3677-d85b-4dc2-9e70-4206c87b2e0c}" />
 	<object class="SingleSound" id="{1820ef5f-a5ed-4b47-ba9a-23f1d5a93786}">
-		<property name="volume">
-			<value>-20</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{b55b4b53-01c7-4a86-90df-68d694ba5f85}</destination>
 		</relationship>
