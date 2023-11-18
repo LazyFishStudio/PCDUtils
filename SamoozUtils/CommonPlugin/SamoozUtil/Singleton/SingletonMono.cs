@@ -5,6 +5,14 @@ using UnityEngine;
 public class SingletonMono<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T instance;
+
+    public static T TryGetInstance() {
+        if (instance == null) {
+            instance = GameObject.FindObjectOfType<T>();
+        }
+        return instance;
+	}
+
     public static T GetInstance() {
         if (instance == null) {
             instance = GameObject.FindObjectOfType<T>();
