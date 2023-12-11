@@ -61,7 +61,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{302516fe-840a-4a96-b2b8-6a36e2f202d6}">
 		<property name="maximumDistance">
-			<value>55</value>
+			<value>60</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{e675e0ec-19ad-4ef3-a0d7-6a9319f52c54}" />
@@ -111,37 +111,33 @@
 	</object>
 	<object class="MixerBusPanner" id="{4ed33b47-18d4-443e-b71c-25a373b49675}" />
 	<object class="MultiSound" id="{76077e16-96cd-401a-ae6e-5c64d6ce2f57}">
+		<property name="pitch">
+			<value>8</value>
+		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{18f8bc42-5aa1-4c85-93af-083fb52aae5e}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{4d70d366-a87f-4a0a-b7ef-9483b06a658d}</destination>
-			<destination>{81f4a30d-78e3-4107-a865-f5b2ec1240c4}</destination>
-			<destination>{f3414dd4-fe10-4601-9a73-1b64d0c6c833}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{6d2fb8c4-b4e0-4c7a-abbb-e36a3deef6a0}" />
 	<object class="MixerBusFader" id="{6f2a9ee4-c746-475b-93d3-6e2dd85e9d72}" />
 	<object class="SpatialiserEffect" id="{52716a55-821b-4b88-94cf-a0a75f14ff8d}" />
+	<object class="RandomizerModulator" id="{18f8bc42-5aa1-4c85-93af-083fb52aae5e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{4d70d366-a87f-4a0a-b7ef-9483b06a658d}">
 		<property name="pitch">
 			<value>-4</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{c21b8b52-4de8-4032-a7eb-11b426257ede}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{81f4a30d-78e3-4107-a865-f5b2ec1240c4}">
-		<property name="pitch">
-			<value>-8</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{c21b8b52-4de8-4032-a7eb-11b426257ede}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{f3414dd4-fe10-4601-9a73-1b64d0c6c833}">
-		<property name="pitch">
-			<value>-12</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c21b8b52-4de8-4032-a7eb-11b426257ede}</destination>
