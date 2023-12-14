@@ -7,13 +7,16 @@ using System;
 public class StateMachine<T> {
         public T curState;
         public T defaultState;
+        public Action onReturnFromSubSM;
         private ActionState<T> curStateAction;
         private Dictionary<T, ActionState<T>> stateDic;
+        private bool isHandleBySubSM;
 
         public StateMachine(T defaultState) {
             stateDic = new Dictionary<T, ActionState<T>>();
             CreateAllState((T[])Enum.GetValues(typeof(T)));
             this.defaultState = defaultState;
+            onReturnFromSubSM = () => isHandleBySubSM = false;
         }
 
         public void CreateAllState(T[] states) {
@@ -41,6 +44,7 @@ public class StateMachine<T> {
             curStateAction = GetState(state);
             curState = curStateAction.state;
             curStateAction.onEnter();
+            onReturnFromSubSM.Invoke();
         }
 
         public void Init() {
@@ -48,7 +52,25 @@ public class StateMachine<T> {
         }
 
         public void UpdateStateAction() {
-            curStateAction.onUpdate();
+            if (CheckUpdateStateCond()) {
+                curStateAction.onUpdate();
+            }
+        }
+
+        /// <summary>
+        /// handle update by a subSM, waiting subSM return to continue cur update
+        /// </summary>
+        /// <typeparam name="SubState"></typeparam>
+        /// <param name="subSM"></param>
+        public void GotoSubSM<SubState>(SubStateMachine<T, SubState> subSM, SubState targetState) {
+            if (subSM == null)
+                return;
+            isHandleBySubSM = true;
+            subSM.OnSubStateEnter(targetState);
+        }
+
+        protected virtual bool CheckUpdateStateCond() {
+            return !isHandleBySubSM;
         }
 
     }
@@ -79,4 +101,31 @@ public class StateMachine<T> {
             this.onUpdate = onUpdate;
             this.onExit = onExit;
         }
+
     }
+
+public class SubStateMachine<ParentState, T> : StateMachine<T> {
+    public StateMachine<ParentState> parentSM;
+    public bool isActiveSM;
+    public SubStateMachine(StateMachine<ParentState> parentSM, T defaultState) : base(defaultState) {
+        this.parentSM = parentSM;
+    }
+
+    public void ReturnToParentSM() {
+        parentSM.onReturnFromSubSM();
+        isActiveSM = false;
+        GotoState(defaultState);
+    }
+
+    public void OnSubStateEnter(T targetState) {
+        isActiveSM = true;
+        Init();
+        GotoState(targetState);
+    }
+
+    // only update after parentSM GotoSubSM
+    protected override bool CheckUpdateStateCond() {
+        return isActiveSM;
+    }
+
+}
