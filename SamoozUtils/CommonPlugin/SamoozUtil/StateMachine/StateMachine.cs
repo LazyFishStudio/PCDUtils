@@ -36,14 +36,14 @@ public class StateMachine<T> {
         public void GotoState(T state, bool allowGotoSameState = true) {
             if (!stateDic.ContainsKey(state)) { return; }
             if (curStateAction != null) {
-                curStateAction.onExit();
+                curStateAction.onExit?.Invoke();
             }
             if (!allowGotoSameState && state.Equals(curState)) {
                 return;
             }
             curStateAction = GetState(state);
             curState = curStateAction.state;
-            curStateAction.onEnter();
+            curStateAction.onEnter?.Invoke();
             onReturnFromSubSM.Invoke();
         }
 
@@ -53,7 +53,7 @@ public class StateMachine<T> {
 
         public void UpdateStateAction() {
             if (CheckUpdateStateCond()) {
-                curStateAction.onUpdate();
+                curStateAction.onUpdate?.Invoke();
             }
         }
 
@@ -96,7 +96,7 @@ public class StateMachine<T> {
     //     sm.Init();
 
     // }
-        public void Bind(System.Action onEnter, System.Action onUpdate, System.Action onExit) {
+        public void Bind(System.Action onEnter = null, System.Action onUpdate = null, System.Action onExit = null) {
             this.onEnter = onEnter;
             this.onUpdate = onUpdate;
             this.onExit = onExit;
