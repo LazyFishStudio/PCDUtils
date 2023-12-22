@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class SingletonMono<T> : MonoBehaviour where T : MonoBehaviour
 {
-    private static T instance;
+    static private T _instance;
 
-    public static T TryGetInstance() {
-        if (instance == null) {
-            instance = GameObject.FindObjectOfType<T>();
+    public static T Instance {
+        get {
+            return _instance != null ? _instance : GetInstance();
         }
-        return instance;
-	}
+    }
 
     public static T GetInstance() {
-        if (instance == null) {
-            instance = GameObject.FindObjectOfType<T>();
-            if (instance == null) {
+        if (_instance == null) {
+            _instance = GameObject.FindObjectOfType<T>();
+            if (_instance == null) {
                 GameObject newObj = new GameObject(typeof(T).ToString());
-                instance = newObj.AddComponent<T>();
+                _instance = newObj.AddComponent<T>();
             }
         }
-        return instance;
+        return _instance;
+    }
+
+    public static T TryGetInstance() {
+        if (_instance == null) {
+            _instance = GameObject.FindObjectOfType<T>();
+        }
+        return _instance;
     }
 }
