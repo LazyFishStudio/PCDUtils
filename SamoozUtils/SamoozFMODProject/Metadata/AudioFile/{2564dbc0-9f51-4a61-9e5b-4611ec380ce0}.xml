@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2564dbc0-9f51-4a61-9e5b-4611ec380ce0}">
 		<property name="assetPath">
-			<value>fishJump.wav</value>
+			<value>8Bit/fishJump.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

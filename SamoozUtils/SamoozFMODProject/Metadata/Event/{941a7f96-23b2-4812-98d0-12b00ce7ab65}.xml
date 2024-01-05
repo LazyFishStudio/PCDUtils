@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{941a7f96-23b2-4812-98d0-12b00ce7ab65}">
 		<property name="name">
-			<value>impact_pop_highpitch</value>
+			<value>Impact-Hold-Old</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{e9ff992d-aa5f-475d-a71c-79a85d93e3f3}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{52e7e194-24d6-4f4b-a7ec-181aa4d1c11b}</destination>

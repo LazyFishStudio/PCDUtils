@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{09cfe30a-ae73-42fe-9115-e121ea74ce57}">
 		<property name="name">
-			<value>hoeDig</value>
+			<value>Impact-DigHole</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{4f5fd39d-0670-4d7b-99a5-a2394c0caeb9}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{29df4daf-970e-4b13-ade6-35c5dd701ee0}</destination>

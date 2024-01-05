@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c92d1027-2ea8-4894-a499-fc51c49d2391}">
+		<property name="assetPath">
+			<value>AUDIO/Pop/SFX_UI_Click_Designed_Pop_Negative_Close_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.16761904761904761</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{29f5aa69-bd8b-4fdc-8145-0cca53d26150}</destination>
+		</relationship>
+	</object>
+</objects>

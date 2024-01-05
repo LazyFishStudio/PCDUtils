@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9542bfb4-1a29-4705-b243-1935382358cf}">
 		<property name="name">
-			<value>footstep_sand_randomize</value>
+			<value>Footstep_Sand</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{dfe37639-b63d-4fa9-8a25-a96e2f418c18}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{1d2ce4df-edd8-494b-98dc-381709eee48b}</destination>
@@ -53,7 +53,7 @@
 			<destination>{520f7190-c26f-4d12-baeb-e9982eb25940}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
+			<destination>{eeac0ea2-078f-46c9-8bba-57502ce36c3d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ccd80378-e942-4b8d-9440-07cb4d2b65a8}">

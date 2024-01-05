@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{22bb6e93-a01e-43dd-bcfc-50356afd09ef}">
 		<property name="assetPath">
-			<value>music_fun_funky_whistle_groove_loop.wav</value>
+			<value>MusicLoop/music_fun_funky_whistle_groove_loop.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

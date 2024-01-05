@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{ac15d9cc-b5f9-48f0-b377-06f5f7e92d4f}">
 		<property name="name">
-			<value>impact_pop</value>
+			<value>Impact-PopOut</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{4f5fd39d-0670-4d7b-99a5-a2394c0caeb9}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{711cf012-8b54-405a-84f8-358cb7176f21}</destination>
@@ -57,7 +57,7 @@
 			<destination>{0ffe56dd-3a56-4164-94a3-e43138b296fb}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
+			<destination>{f6f99bb9-b0d1-42ee-be3f-f3f2c47134cd}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7d08aa62-ad9b-47cf-be77-5c3467f9a7a8}">

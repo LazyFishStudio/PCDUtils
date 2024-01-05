@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{c718bebd-9028-406e-ad0f-4fbc8704199e}">
 		<property name="name">
-			<value>fish_jump</value>
+			<value>BImpact-FishJump</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{5c80fbc4-6128-45a8-b203-8cc53ac710d0}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{7e9fd1ec-4977-433c-8385-5f57f1506056}</destination>
@@ -56,7 +56,7 @@
 			<destination>{a7d864ff-2b03-4166-a368-5a7f20c1a8a2}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
+			<destination>{d2226da2-7241-4ae7-8028-00b51709f5b7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{05767b92-ce25-4b7a-9807-b1f8d85e53e8}">
@@ -76,9 +76,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1bd1065f-96d2-4101-ae90-a196863b4d5a}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{f2922a13-502a-4449-a5ac-03feb25fa16c}</destination>
 		</relationship>
@@ -94,7 +91,8 @@
 			<value>1</value>
 		</property>
 		<relationship name="sounds">
-			<destination>{322c1899-fcac-47dd-9264-39545bd9593a}</destination>
+			<destination>{97a79c87-f8f1-4c17-9da3-9096c4d19d29}</destination>
+			<destination>{d9910642-6c0e-48a6-92f4-3c6f46977851}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{7462b149-4fc5-4853-9d17-0878f2132509}">
@@ -105,31 +103,56 @@
 	<object class="MixerBusPanner" id="{a7d864ff-2b03-4166-a368-5a7f20c1a8a2}" />
 	<object class="MixerBusEffectChain" id="{f2922a13-502a-4449-a5ac-03feb25fa16c}">
 		<relationship name="effects">
+			<destination>{202a52ca-7d67-4391-b8a9-13577fb89093}</destination>
 			<destination>{e7639f23-9e66-47dc-8a22-eceaf4f57313}</destination>
 			<destination>{9c39d636-585b-4a1e-ac0f-c57ac6ea2420}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9db1d68b-805b-41e3-a644-976c16a457f9}" />
-	<object class="SingleSound" id="{322c1899-fcac-47dd-9264-39545bd9593a}">
+	<object class="SingleSound" id="{97a79c87-f8f1-4c17-9da3-9096c4d19d29}">
+		<relationship name="modulators">
+			<destination>{a6b5ac85-d5ae-4377-850a-ea67810c87b4}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{cfb8a58f-0105-4899-8f53-388dd9701857}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{d9910642-6c0e-48a6-92f4-3c6f46977851}">
 		<property name="volume">
 			<value>-10</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{1998933d-7a00-4f14-bc46-2ec8fa7d58dc}</destination>
+			<destination>{1e7fd23f-0f37-4b56-a7b5-c2bc2d7f71d4}</destination>
 		</relationship>
 		<relationship name="audioFile">
-			<destination>{2564dbc0-9f51-4a61-9e5b-4611ec380ce0}</destination>
+			<destination>{cac6ae8f-400c-46ac-9320-21b0594ae747}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{a430ea6e-2f0d-4363-9c5a-965c65054e34}" />
+	<object class="ThreeEQEffect" id="{202a52ca-7d67-4391-b8a9-13577fb89093}">
+		<property name="midGain">
+			<value>-80</value>
+		</property>
+		<property name="crossoverSlope">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{e7639f23-9e66-47dc-8a22-eceaf4f57313}" />
 	<object class="SpatialiserEffect" id="{9c39d636-585b-4a1e-ac0f-c57ac6ea2420}" />
-	<object class="RandomizerModulator" id="{1998933d-7a00-4f14-bc46-2ec8fa7d58dc}">
+	<object class="RandomizerModulator" id="{a6b5ac85-d5ae-4377-850a-ea67810c87b4}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>16.6666679</value>
+			<value>17</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{1e7fd23f-0f37-4b56-a7b5-c2bc2d7f71d4}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>17</value>
 		</property>
 	</object>
 </objects>

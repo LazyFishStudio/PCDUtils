@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{e091010f-d4fc-4579-8f49-4fc11138e9c7}">
 		<property name="assetPath">
-			<value>retro_powerup_item_05.wav</value>
+			<value>LevelUp/retro_powerup_item_05.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

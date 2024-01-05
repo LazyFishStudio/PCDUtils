@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{8217da91-9c81-4a39-a0c9-9bb22713b82e}">
 		<property name="name">
-			<value>movie_shutter</value>
+			<value>Background-Shutter</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{a5002d09-0d60-4607-894d-dd7f1e9d1b8a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{9bd58efc-4b62-4466-a686-5f1dfd0cf1eb}</destination>

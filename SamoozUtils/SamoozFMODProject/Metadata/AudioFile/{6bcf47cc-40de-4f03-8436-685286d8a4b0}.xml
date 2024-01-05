@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{6bcf47cc-40de-4f03-8436-685286d8a4b0}">
 		<property name="assetPath">
-			<value>footstep_sand_run_02.wav</value>
+			<value>FootStep/Sand/footstep_sand_run_02.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

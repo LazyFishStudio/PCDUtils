@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9d54cea3-4159-49d5-8cf6-aefdd5002682}">
 		<property name="name">
-			<value>impact_ball_hit</value>
+			<value>BImpact-BallHit</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{a5002d09-0d60-4607-894d-dd7f1e9d1b8a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{fc8f98af-2b4b-4e62-b763-e25e214b777a}</destination>
@@ -56,7 +56,7 @@
 			<destination>{9188b21d-30e1-4cb1-b5bb-6da9ab8e93ab}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
+			<destination>{d2226da2-7241-4ae7-8028-00b51709f5b7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{95ec31f4-366e-47a5-90bd-1d2f6d88c2eb}">

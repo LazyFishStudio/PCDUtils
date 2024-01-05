@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{3d62ecc4-addc-4e6f-9ccb-ce4fdda8d276}">
 		<property name="assetPath">
-			<value>squeaky_rubber_toy_cartoon_01.wav</value>
+			<value>Toy/squeaky_rubber_toy_cartoon_01.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

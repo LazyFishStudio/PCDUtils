@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bcf6a373-a341-41f4-b077-5c28a66bab23}">
+		<property name="assetPath">
+			<value>AUDIO/Pop/SFX_UI_Click_Designed_Pop_Thick_Generic_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.14077097505668934</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{29f5aa69-bd8b-4fdc-8145-0cca53d26150}</destination>
+		</relationship>
+	</object>
+</objects>

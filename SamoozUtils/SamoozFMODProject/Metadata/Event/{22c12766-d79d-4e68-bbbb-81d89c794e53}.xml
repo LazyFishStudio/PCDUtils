@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{22c12766-d79d-4e68-bbbb-81d89c794e53}">
 		<property name="name">
-			<value>music_calm_tree_of_life</value>
+			<value>MusicLoop-LimitedIsland</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{9b817b69-7491-4448-909e-27396e28abc6}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{af1a36d0-147f-4e21-9776-22c4feec4b1b}</destination>

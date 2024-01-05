@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{8afa81e0-331d-43af-8540-49509b528dae}">
 		<property name="name">
-			<value>whoosh_weapon</value>
+			<value>Impact-Whoosh-Stick</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{d8fe0788-e960-4e64-8145-cebe649c26b2}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{aadaf3d3-7108-4a3c-9a19-8ff55bc6d929}</destination>
@@ -56,7 +56,7 @@
 			<destination>{5e1e3ec7-9045-4036-85e4-2a5e7d51dcae}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{483a3e32-877d-43f9-aee3-73b53b7ffa44}</destination>
+			<destination>{dee5893a-c6ed-4c1c-9541-ef4e9b638628}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{9352a3a2-a868-40ff-9b74-16e20489941a}">
@@ -76,9 +76,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{eec0657e-6485-4f3b-be5d-c086501d7d21}">
-		<property name="volume">
-			<value>-5</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{6f02c812-f825-42e1-bb4d-f5e6714326ea}</destination>
 		</relationship>
@@ -113,7 +110,6 @@
 		</property>
 		<relationship name="sounds">
 			<destination>{8aab47ac-31f2-4867-b8d9-2992f535c45b}</destination>
-			<destination>{c25a759a-9254-488f-b278-069d6bd51633}</destination>
 			<destination>{5a04f253-48ce-4b60-98d7-3ac3a5fb3e0e}</destination>
 			<destination>{7ac8d647-d67a-4ea5-a199-069812e48135}</destination>
 		</relationship>
@@ -124,11 +120,6 @@
 	<object class="SingleSound" id="{8aab47ac-31f2-4867-b8d9-2992f535c45b}">
 		<relationship name="audioFile">
 			<destination>{5f897f23-4095-4dbf-86b8-a1196c0c0b18}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{c25a759a-9254-488f-b278-069d6bd51633}">
-		<relationship name="audioFile">
-			<destination>{a5a0302e-61f8-400f-8cd7-0abf8a857015}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{5a04f253-48ce-4b60-98d7-3ac3a5fb3e0e}">

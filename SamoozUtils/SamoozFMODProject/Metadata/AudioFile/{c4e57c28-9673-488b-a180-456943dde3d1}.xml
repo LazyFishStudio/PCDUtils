@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c4e57c28-9673-488b-a180-456943dde3d1}">
 		<property name="assetPath">
-			<value>fart_squirt_02.wav</value>
+			<value>Fart/fart_squirt_02.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

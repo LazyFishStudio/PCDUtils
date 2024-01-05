@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b55b4b53-01c7-4a86-90df-68d694ba5f85}">
 		<property name="assetPath">
-			<value>cash_register_open_coins_cha_ching_01.wav</value>
+			<value>Money/cash_register_open_coins_cha_ching_01.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

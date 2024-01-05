@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{05652dd4-c852-44cd-b731-cd118f4f0821}">
 		<property name="assetPath">
-			<value>snowball_hit_impact_04.wav</value>
+			<value>FootStep/snowball_hit_impact_04.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

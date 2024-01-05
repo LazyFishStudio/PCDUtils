@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{a6cc7f48-0d02-4371-98e5-13c86dc51580}">
 		<property name="name">
-			<value>impact_water</value>
+			<value>Impact-Water-Splashing</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a4457fdf-5b5f-4ae5-842a-03c8279ee5f9}</destination>
+			<destination>{d8fe0788-e960-4e64-8145-cebe649c26b2}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{900fcb63-9f9e-4277-9376-ad35730eaef4}</destination>

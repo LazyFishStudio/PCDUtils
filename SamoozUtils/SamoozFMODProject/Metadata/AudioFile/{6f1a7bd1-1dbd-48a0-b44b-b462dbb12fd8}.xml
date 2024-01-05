@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{6f1a7bd1-1dbd-48a0-b44b-b462dbb12fd8}">
 		<property name="assetPath">
-			<value>movie_camera_vintage_shutter_loop_3.wav</value>
+			<value>Loop/movie_camera_vintage_shutter_loop_3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
