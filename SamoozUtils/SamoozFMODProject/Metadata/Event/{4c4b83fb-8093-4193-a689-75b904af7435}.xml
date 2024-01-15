@@ -64,6 +64,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{df7b63a9-f1bc-4dd6-bbd6-8e8937ea4934}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{dea861df-99a4-4912-b3dd-4d3f4398c44d}</destination>
 		</relationship>
@@ -110,6 +113,7 @@
 			<destination>{e54d9b7b-4418-4c06-8e58-32c3527daf7f}</destination>
 			<destination>{b3fc0b9b-9d5e-4d7e-8056-4f0788231a82}</destination>
 			<destination>{3a2ddca9-bb16-4dd7-b034-29c8281d5747}</destination>
+			<destination>{f4b61d4f-8f08-4086-aff2-f08b4f7c920f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8887b983-6e06-49ee-add4-711d0db6e2da}" />
@@ -125,9 +129,20 @@
 			<value>10</value>
 		</property>
 		<property name="highCrossover">
-			<value>9000</value>
+			<value>13000</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{b3fc0b9b-9d5e-4d7e-8056-4f0788231a82}" />
 	<object class="SpatialiserEffect" id="{3a2ddca9-bb16-4dd7-b034-29c8281d5747}" />
+	<object class="ChorusEffect" id="{f4b61d4f-8f08-4086-aff2-f08b4f7c920f}">
+		<property name="rate">
+			<value>20</value>
+		</property>
+		<property name="depth">
+			<value>8</value>
+		</property>
+		<property name="mix">
+			<value>74</value>
+		</property>
+	</object>
 </objects>

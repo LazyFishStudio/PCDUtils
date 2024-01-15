@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{cac6ae8f-400c-46ac-9320-21b0594ae747}">
 		<property name="assetPath">
-			<value>WaterDrop/water_drop_drip_single_03.wav</value>
+			<value>Water/WaterDrop/water_drop_drip_single_03.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
