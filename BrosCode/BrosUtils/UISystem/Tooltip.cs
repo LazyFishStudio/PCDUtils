@@ -22,7 +22,7 @@ namespace Bros.UI2D {
         }
 
         public void SetupText(string str) {
-            text.text = str;
+            text.text = "<wave>" + str + "</wave>";
             RefreshGFX();
         }
 
